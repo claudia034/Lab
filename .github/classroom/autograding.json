@@ -1,0 +1,40 @@
+{
+  "tests": [
+    {
+      "name": "Functional",
+      "run": "mvn -Dtest=FunctionalTest#squirtl test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Random",
+      "run": "mvn -Dtest=StreamsDemoTest#createRandomList test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Prime",
+      "run": "mvn -Dtest=StreamsDemoTest#isPrimeNumber test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Load",
+      "run": "mvn -Dtest=StreamsDemoTest#getFirstNumberAmong50000 test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 20
+    }
+  ]
+}
