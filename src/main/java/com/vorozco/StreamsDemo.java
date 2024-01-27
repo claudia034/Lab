@@ -34,7 +34,7 @@ public class StreamsDemo {
         return contador <= 0;
     }
     public static void main(String args[]){
-       System.out.println("Calculando aleatorios");
+        System.out.println("Calculando aleatorios");
         var listadoPrimos = createRandomList(Integer.valueOf(args[0])).stream()
                 .filter(n -> isPrimeNumber(n))
                 .sorted()

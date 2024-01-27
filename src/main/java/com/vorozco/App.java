@@ -2,11 +2,7 @@ package com.vorozco;
 
 import com.vorozco.functional.MyFunctionalInterface;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class App {
 
@@ -50,13 +46,10 @@ public class App {
     public static void main( String[] args ){
 
         List jedis = List.of("Anakin", "Leia","Luke","Rey");
-        var theJedis = jedis.stream()
-                .peek(System.out::println)
-                .filter(s -> !s.equals("Rey"))// Map
-                .peek(System.out::println)
-                .map(j -> j.toString().toUpperCase()) //Map
-                .peek(System.out::println)
-                .collect(Collectors.toList());
-        System.out.println("Resultado --- " + theJedis);
+        //var filterJedis = jedis.stream()
+                //.filter(s-> !equals ("Rey"))
+                //.map (j.toString().toUpperCase())
+
+                //System.out.println(filterJedis.get());
     }
 }
